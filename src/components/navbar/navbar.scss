@@ -5,4 +5,9 @@
     @media screen and (max-width: 900px){
         gap: 10px;        
     }
+    &_active {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+    }
+
 }

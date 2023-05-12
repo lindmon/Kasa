@@ -1,12 +1,23 @@
 import './navbar.scss';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
+    const path = window.location.pathname;
+    
     return(
         <nav className="navbar">
             <ul className='nav_list'>
-                <li className='nav_list_item'>Accueil</li>
-                <li className='nav_list_item'>A Propos</li>
+                <li className={path ==='/' ? 'nav_list_active':'nav_list'}>
+                    <Link to='/'>
+                    Accueil
+                    </Link>
+                </li>
+                <li className={path ==='/about' ? 'nav_list_active':'nav_list'}>
+                    <Link to="/about">
+                        A Propos
+                    </Link>
+                </li>
             </ul>
         </nav>
 

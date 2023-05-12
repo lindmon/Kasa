@@ -1,19 +1,23 @@
 import './banner.scss';
-import {useLocation} from "react-router-dom";
 
 
 function Banner() {
-    const path = useLocation().pathname;
-    console.log(path);
+    const path = window.location.pathname;
+    
+    if(path === "/") {
+        return(
+            <section className="banner">
+                <p className='banner-text'>Chez vous, partout et ailleurs</p>
+            </section>
+        )
 
-    return(
-        <section>
-            <div className="banner"></div>
-            <p></p>
-        </section>
-        
+    } if (path === "/about") {
+        return(
+            <section className="banner_about">
+            </section>           
 
-    )
+        )
+     }
 }
 
 export default Banner

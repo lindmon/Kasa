@@ -1,2 +1,32 @@
 @import '../../styles/main.scss';
 
+.banner{
+    max-width: 90%;
+    height: 223px;
+    margin: 43px auto;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../../assets/hero-img.png') ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 900px){
+        border-radius: 10px;
+      height: 111px;
+      margin: 10px 20px 22px 20px;
+        
+    }
+    
+    .banner-text {
+        font-size: 48px;
+        color: $color-text-white;
+        @media screen and (max-width: 900px){
+            font-size: 24px;
+            margin-left: 16px;
+              
+          }
+        
+    }
+    
+}
