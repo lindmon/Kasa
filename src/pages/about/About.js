@@ -10,7 +10,6 @@ function About() {
         <div className="home">
             <Header />
             <Banner />
-            <div className="">HEllo from About section</div>
         </div>
 
     )

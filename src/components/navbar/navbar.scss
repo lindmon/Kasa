@@ -8,6 +8,9 @@
     &_active {
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
+        @media screen and (max-width: 900px){
+            text-decoration-thickness: 1px;      
+        }
     }
 
 }
