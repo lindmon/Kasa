@@ -14,7 +14,7 @@
     @media screen and (max-width: 900px){
         border-radius: 10px;
       height: 111px;
-      margin: 10px 20px 22px 20px;
+      margin: 10px auto 22px auto;
         
     }
     
@@ -23,7 +23,7 @@
         color: $color-text-white;
         @media screen and (max-width: 900px){
             font-size: 24px;
-            margin-left: 16px;
+            margin: auto 16px;
               
           }
         
