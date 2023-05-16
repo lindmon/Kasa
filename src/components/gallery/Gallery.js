@@ -5,14 +5,14 @@ import data from '../../data/data';
 
 function Gallery() {
 
-// const [accomodationData, setAccomodationData] = useState({});
+// const [accommodationData, setAccommodationData] = useState({});
 //  //Recuperer les données
 //  useEffect(() => {
-//     async function fetchAccomodation() {
+//     async function fetchAccommodation() {
 //         try{
 //             const response = await fetch('../../data/logements.json')
-//             const {accomodationData} = await response.json()
-//             setAccomodationData(accomodationData)
+//             const {accommodationData} = await response.json()
+//             setAccommodationData(accommodationData)
 //         }
 //         catch(err){
 
@@ -20,9 +20,9 @@ function Gallery() {
         
 
 //     }
-//     fetchAccomodation()
+//     fetchAccommodation()
 //  }, []);
-//  console.log(accomodationData);
+//  console.log(accommodationData);
     
     return(
        <section className="gallery">
