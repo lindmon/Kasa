@@ -1,0 +1,47 @@
+@import '../../styles/main.scss';
+
+.slider{
+    max-width: 90%;
+    margin: 20px auto;
+    height: 415px;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @media screen and (max-width: 900px){
+        height: 225px;
+        border-radius: 10px;
+        
+    }
+    .arrow{
+        top: 38%;
+        height:79px;
+        position:absolute;
+        cursor: pointer;
+        @media screen and (max-width: 900px){
+          height: 20px;
+          top: 45%;         
+            
+        }
+        &:hover{
+            transform:scale(1.1);
+        }
+        &_right{
+            right:23px;
+        }
+        &_left{
+            left:23px;
+        }
+    }
+    .slider_counter{
+        font-size: 18px;
+        color: $color-text-white;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        @media screen and (max-width: 900px){
+            display: none;
+        }
+    
+    }
+}

@@ -1,12 +1,12 @@
 import './accommodation.scss';
 import Header from '../../components/header/Header';
+import Slider from '../../components/slider/Slider';
 import Footer from '../../components/footer/Footer';
 import { useParams } from 'react-router-dom';
 import data from '../../data/data';
 import greyStar from '../../assets/grey-star.png';
 import orangeStar from '../../assets/orange-star.png';
-
-// import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -16,11 +16,14 @@ function Accommodation() {
     const rating = placeInfo.rating;
     const array = [1,2,3,4,5];
 
-    // useEffect(() => {
-    //     const placeInfo = data.filter(data => data.id === id);
+    //Recupere les images pour carrousel
+    const [imageSlider, setImageSlider] = useState([]);
 
+    useEffect(() => {
+        const placeInfo = data.filter(data => data.id === id)[0];
+        setImageSlider(placeInfo.pictures);
 
-    // }, [id]);   
+    }, [id]);   
 
     
     
@@ -29,6 +32,7 @@ function Accommodation() {
     return(
         <div>
             <Header />
+            <Slider imagesForSlider={imageSlider}/>
             <main className='place_section'>
                 <div className="place_info">
                     <div>
