@@ -1,10 +1,8 @@
 import './navbar.scss';
 import { Link } from 'react-router-dom';
-
-
+//Créer le composant Navbar
 function Navbar() {
     const path = window.location.pathname;
-    
     return(
         <nav className="navbar">
             <ul className='nav_list'>
@@ -20,8 +18,6 @@ function Navbar() {
                 </li>
             </ul>
         </nav>
-
     )
 }
-
 export default Navbar

@@ -3,15 +3,12 @@ import Banner from '../../components/banner/Banner';
 import Header from '../../components/header/Header';
 import Collapse from '../../components/collapse/Collapse';
 import dataAbout from '../../data/dataAbout';
-
-
+// Créer le composant About avec tous les composants nécessaires
 function About() {
     return(
         <div className="home">
             <Header/>
             <Banner />
-            
-
             <main className="about_main">
                 {dataAbout.map( data => {
                     return(
@@ -20,11 +17,8 @@ function About() {
                         </div>
                     )
                 })}
-
             </main>
         </div>
-
     )
 }
-
 export default About

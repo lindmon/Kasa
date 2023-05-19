@@ -5,7 +5,7 @@ import About from './pages/about/About';
 import Error from "./pages/error/Error";
 import Accommodation from "./pages/accommodation/Accommodation";
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-
+//Créer le router pour les page
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: <Error />,
   },
 ]);
-
+//Demarrer le router
 function App() {
   return (
     <div>
@@ -34,5 +34,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
