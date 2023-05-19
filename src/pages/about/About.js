@@ -8,7 +8,7 @@ import dataAbout from '../../data/dataAbout';
 function About() {
     return(
         <div className="home">
-            <Header />
+            <Header/>
             <Banner />
             
 
@@ -16,7 +16,7 @@ function About() {
                 {dataAbout.map( data => {
                     return(
                         <div className="about_collapse" key={data.id}>
-                            <Collapse style={{margin:'30px 0'}} title={data.title} content={data.content} />
+                            <Collapse title={data.title} content={data.content} />
                         </div>
                     )
                 })}

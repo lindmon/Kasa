@@ -23,10 +23,15 @@ function Slider({imagesForSlider}) {
    
     return(
         <section className="slider" style={{backgroundImage : `url(${imagesForSlider[currentIndex]})`}} >
+            {imagesForSlider.length > 1 &&
+                <>
+                 <img src={leftArrow} alt="flèche gauche" className="arrow arrow_left" onClick={previousSlide}  />
+                 <img src={rightArrow} alt="flèche droite" className="arrow arrow_right" onClick={nextSlide}/>
+                 <p className="slider_counter">{currentIndex + 1} / {imagesForSlider.length}</p> 
+                 </>  
+             }
             
-            <img src={leftArrow} alt="flèche gauche" className="arrow arrow_left" onClick={previousSlide}  />
-            <img src={rightArrow} alt="flèche droite" className="arrow arrow_right" onClick={nextSlide}/>
-            <p className="slider_counter">{currentIndex + 1} / {imagesForSlider.length}</p>    
+            
 
         </section>
            

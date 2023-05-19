@@ -6,7 +6,6 @@ import { useState } from 'react';
 function Collapse({title , content}) { 
     const [toggle, setToggle] = useState(true);
     const aboutPage = window.location.pathname === "/about";
-    console.log(aboutPage);
    
 return(
        <div className={aboutPage ? "collapse_about" :"collapse"}>

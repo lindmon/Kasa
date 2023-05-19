@@ -1,5 +1,6 @@
 import React from "react";
-import Home from './pages/home/Home'
+import Home from './pages/home/Home';
+import Footer from './components/footer/Footer';
 import About from './pages/about/About';
 import Error from "./pages/error/Error";
 import Accommodation from "./pages/accommodation/Accommodation";
@@ -17,17 +18,20 @@ const router = createBrowserRouter([
   {
     path: "/accommodation/:id",
     element: <Accommodation />,
+    errorElement: <Error/>,
   },
   {
     path: "*",
     element: <Error />,
   },
-
 ]);
 
 function App() {
   return (
+    <div>
     <RouterProvider router={router} />
+    <Footer/>
+    </div>
   );
 }
 

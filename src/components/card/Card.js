@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Card({id,title,cover}) {
 
-    
+ 
     return(
             <Link to={`/accommodation/${id}`} className="gallery_card">
                 <img className='gallery_card_img' src={cover} alt={title} />
@@ -13,6 +13,7 @@ function Card({id,title,cover}) {
             </Link>
        
     )
+    
 }
 
 export default Card

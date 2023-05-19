@@ -1,6 +1,6 @@
 import './error.scss';
-import { Link } from 'react-router-dom';
 import Header from '../../components/header/Header';
+import { Link } from 'react-router-dom';
 
 
 function Error() {
@@ -8,7 +8,7 @@ function Error() {
     
     return(
         <div>
-            <Header />
+            <Header/>
             <section className='errorSection'>
                 <div className="error_info">
                     <h2 className='error_info_title'>404</h2>
