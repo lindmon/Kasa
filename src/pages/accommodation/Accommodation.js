@@ -1,6 +1,7 @@
 import './accommodation.scss';
 import Header from '../../components/header/Header';
 import Slider from '../../components/slider/Slider';
+import Collapse from '../../components/collapse/Collapse';
 import Footer from '../../components/footer/Footer';
 import { useParams } from 'react-router-dom';
 import data from '../../data/data';
@@ -15,6 +16,10 @@ function Accommodation() {
     const placeInfo = data.filter(data => data.id === id)[0];
     const rating = placeInfo.rating;
     const array = [1,2,3,4,5];
+    const description = placeInfo.description;
+    const equipments = placeInfo.equipments;
+
+    
 
     //Recupere les images pour carrousel
     const [imageSlider, setImageSlider] = useState([]);
@@ -67,11 +72,17 @@ function Accommodation() {
                             }
                         </div>
                 </div>
+
+                
                
                 
 
 
             </main>
+            <section className="accomodation_collapse">
+            < Collapse title={'Description'} content={description}/>
+            <Collapse title={'Équipements'} content={equipments}/>
+            </section>
 
             <Footer />
         </div>

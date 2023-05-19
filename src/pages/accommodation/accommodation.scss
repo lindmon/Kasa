@@ -70,7 +70,6 @@
         margin-left: 10px;
         @media screen and (max-width: 900px){
            max-width: 57px;
-
         }
     }
     .place_info_host_name{
@@ -114,4 +113,16 @@
         }
     }
     
+}
+.accomodation_collapse{
+    width: 90%;
+    margin: 10px auto 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    @media screen and (max-width: 650px){
+        flex-direction: column;
+        gap: 0;
+
+     }
 }

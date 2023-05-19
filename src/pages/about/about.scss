@@ -1,1 +1,13 @@
 @import '../../styles/main.scss';
+
+.about_collapse{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width: 650px){
+        width: 90%;
+     }
+
+}

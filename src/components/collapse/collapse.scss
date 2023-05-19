@@ -1,0 +1,183 @@
+@import '../../styles/main.scss';
+
+.collapse{
+    width: 50%;
+    @media screen and (max-width: 650px){
+        width: 100%;
+     }
+    
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 20px;
+        background-color: $color-text-orange;
+        color: $color-text-white;
+        font-size: 18px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 3;
+        @media screen and (max-width: 650px){
+            max-width: 100%;
+            margin: 0 ;
+            height: 30px;
+            font-size: 13px;
+            padding: 5.5px 10px;
+            border-radius: 5px;
+         }
+        .arrow{
+            width: 24px;
+            height: 14px;
+            @media screen and (max-width: 650px){
+                width: 16px; 
+                height: 9px;   
+             }
+            
+        }
+    }
+    .content{
+        background-color: $color-background-grey;
+        border-radius: 10px;
+        color: $color-text-orange;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: -20px;
+        visibility: visible;
+        z-index: -3;
+        opacity: 1;
+        transition: height 1s ease-in-out, visibility 1s ease-in-out, opacity 0.5s ease-in-out;
+        @media screen and (max-width: 650px){
+            width: 100%; 
+            height: auto;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 23px 11px 10px;
+            margin-top: -10px;
+            transition: height 1s ease-in-out,opacity 1s ease-in-out, visibility 0.5s ease-in-out;
+         }
+
+        
+    }
+   
+    .content_hidden{
+        margin-top: -20px;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $color-text-orange;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: height 1s ease-in-out, visibility 1s ease-in-out, opacity 0.2s ease-in-out;
+        @media screen and (max-width: 650px){
+            width: 100%; 
+            height: 0;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 23px 11px 10px;
+            margin-top: -10px;
+            transition: height 1s ease-in-out, visibility 1s ease-in-out, opacity 0.5s ease-in-out;
+         }
+    }
+}
+
+.collapse_about{
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (max-width: 650px){
+        width: 100%;
+        margin-bottom: 0;
+     }
+    
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 20px;
+        background-color: $color-text-orange;
+        color: $color-text-white;
+        font-size: 18px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 3;
+        @media screen and (max-width: 650px){
+            max-width: 100%;
+            margin: 0 ;
+            height: 30px;
+            font-size: 13px;
+            padding: 5.5px 10px;
+            border-radius: 5px;
+         }
+        .arrow{
+            width: 24px;
+            height: 14px;
+            @media screen and (max-width: 650px){
+                width: 16px; 
+                height: 9px;   
+             }
+            
+        }
+    }
+    .content{
+        background-color: $color-background-grey;
+        border-radius: 10px;
+        color: $color-text-orange;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: -20px;
+        visibility: visible;
+        z-index: -3;
+        opacity: 1;
+        transition: height 1s ease-in-out, visibility 1s ease-in-out, opacity 0.5s ease-in-out;
+        @media screen and (max-width: 650px){
+            width: 100%; 
+            height: auto;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 23px 11px 10px;
+            margin-top: -10px;
+            transition: height 1s ease-in-out,opacity 1s ease-in-out, visibility 0.5s ease-in-out;
+         }
+
+        
+    }
+   
+    .content_hidden{
+        margin-top: -20px;
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $color-text-orange;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: height 1s ease-in-out, visibility 1s ease-in-out, opacity 0.2s ease-in-out;
+        @media screen and (max-width: 650px){
+            width: 100%; 
+            height: 0;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 23px 11px 10px;
+            margin-top: -10px;
+            transition: height 1s ease-in-out, visibility 1s ease-in-out, opacity 0.5s ease-in-out;
+         }
+    }
+}

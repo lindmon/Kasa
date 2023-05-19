@@ -5,24 +5,6 @@ import data from '../../data/data';
 
 function Gallery() {
 
-// const [accommodationData, setAccommodationData] = useState({});
-//  //Recuperer les données
-//  useEffect(() => {
-//     async function fetchAccommodation() {
-//         try{
-//             const response = await fetch('../../data/logements.json')
-//             const {accommodationData} = await response.json()
-//             setAccommodationData(accommodationData)
-//         }
-//         catch(err){
-
-//         }
-        
-
-//     }
-//     fetchAccommodation()
-//  }, []);
-//  console.log(accommodationData);
     
     return(
        <section className="gallery">
