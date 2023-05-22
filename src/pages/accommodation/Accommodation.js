@@ -1,5 +1,4 @@
 import './accommodation.scss';
-import Header from '../../components/header/Header';
 import Slider from '../../components/slider/Slider';
 import Rating from '../../components/rating/Rating';
 import Collapse from '../../components/collapse/Collapse';
@@ -21,7 +20,6 @@ function Accommodation() {
     }, [id]);   
         return(
             <div>
-                <Header/>
                 <Slider imagesForSlider={imageSlider}/>
                 <main className='place_section'>
                     <div className="place_info">
