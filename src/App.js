@@ -1,4 +1,5 @@
 import React from "react";
+// import "./app.scss";
 import Home from './pages/home/Home';
 import Header from "./components/header/Header";
 import Footer from './components/footer/Footer';
@@ -8,33 +9,30 @@ import Accommodation from "./pages/accommodation/Accommodation";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 //Créer le router pour les page
 const router = createBrowserRouter( [
-  { 
-    element: <Header/>,
-    children: [
+  
           {
             path: "/",
-            element: <Home />,
+            element: [<Header />, <Home />],
           },
           {
             path: "/about",
-            element: <About />,
+            element:[<Header />, <About />],
           },
           {
             path: "/accommodation/:id",
-            element: <Accommodation />,
-            errorElement: <Error/>,
+            element: [<Header />, <Accommodation />],
+            errorElement:[<Header />, <Error/>],
           },
           {
             path: "*",
-            element: <Error />,
+            element: [<Header />, <Error />],
           }
-    ],
-  },     
+    
 ]);
 //Demarrer le router
 function App() {
   return (
-    <div>
+    <div className="body_container">
     <RouterProvider router={router} />
     <Footer/>
     </div>

@@ -6,9 +6,9 @@ function Rating({rating}) {
     const array = [1,2,3,4,5];
         return(
             <div className="place_info_host_stars">
-               { array.map (number => {
+               { array.map ((number, index) => {
                             return(
-                            <img src={(number <= rating)? orangeStar: greyStar } 
+                            <img key={index} src={(number <= rating)? orangeStar: greyStar } 
                             alt={`cette logement est ${rating} de 5 comme évaluations`} />
                             )
                         })
