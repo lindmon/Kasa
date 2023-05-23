@@ -1,9 +1,10 @@
 import './error.scss';
-import { Link } from 'react-router-dom';
+import { Link, useRouteError } from 'react-router-dom';
 //Créer le composant Error avec tous les composants nécessaire
 function Error() {
+    const error = useRouteError();
+    console.log(error);
     return(
-        <div>
             <section className='errorSection'>
                 <div className="error_info">
                     <h2 className='error_info_title'>404</h2>
@@ -11,7 +12,7 @@ function Error() {
                 </div>
                 <Link to='/' className='error_linkToHome'>Retourner sur la page d'accueil</Link>
             </section>
-        </div>
+        
     )
 }
 export default Error

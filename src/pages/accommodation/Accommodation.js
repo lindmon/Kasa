@@ -2,6 +2,7 @@ import './accommodation.scss';
 import Slider from '../../components/slider/Slider';
 import Rating from '../../components/rating/Rating';
 import Collapse from '../../components/collapse/Collapse';
+// import Error from '../error/Error';
 import { useParams } from 'react-router-dom';
 import data from '../../data/data';
 import { useEffect, useState } from 'react';
@@ -18,8 +19,9 @@ function Accommodation() {
         const placeInfo = data.filter(data => data.id === id)[0];
         setImageSlider(placeInfo.pictures);
     }, [id]);   
+    
         return(
-            <div>
+            <div className='accommodation_main'>
                 <Slider imagesForSlider={imageSlider}/>
                 <main className='place_section'>
                     <div className="place_info">
@@ -44,7 +46,7 @@ function Accommodation() {
                                 <img src={placeInfo.host.picture} alt={`${placeInfo.host.name}`} /> 
                                 </div>
                             </div>
-                            <Rating rating={rating}/>
+                            <Rating rating= {rating}/>
                     </div>
                 </main>
                 <section className="accomodation_collapse">

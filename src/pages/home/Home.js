@@ -4,7 +4,7 @@ import Gallery from '../../components/gallery/Gallery';
 //Créer le componsant Home avec tous les composants nécessaire
 function Home() {
     return(
-        <div className="home">
+        <div>
             <Banner />
             <Gallery />
         </div>

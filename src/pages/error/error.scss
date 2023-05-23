@@ -2,12 +2,16 @@
 
 .errorSection {
     width: 70%;
-    height: 80vh;
+    min-height: calc(100vh - 317px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (max-width: 900px) {
+        min-height: calc(100vh - 276px);
+
+    }
     .error_info_title{
         font-size: 288px;
         color: $color-text-orange;

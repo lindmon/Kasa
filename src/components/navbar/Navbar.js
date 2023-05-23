@@ -19,18 +19,5 @@ function Navbar() {
                 </ul>
             </nav>
         )
-    
-    
-    // useEffect( () => {
-    //    let path = window.location.pathname;
-        
-    //     console.log(path);
-    
-    
-    
-    // },[Link]);
-
-
-    
 }
 export default Navbar
