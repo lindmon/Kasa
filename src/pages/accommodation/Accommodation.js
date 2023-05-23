@@ -19,8 +19,7 @@ function Accommodation() {
         const placeInfo = data.filter(data => data.id === id)[0];
         setImageSlider(placeInfo.pictures);
     }, [id]);   
-    
-        return(
+            return(
             <div className='accommodation_main'>
                 <Slider imagesForSlider={imageSlider}/>
                 <main className='place_section'>

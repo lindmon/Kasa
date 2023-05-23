@@ -8,25 +8,30 @@ import Accommodation from "./pages/accommodation/Accommodation";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 //Créer le router pour les page
 const router = createBrowserRouter( [
-          {
-            path: "/",
-            element: <><Header /> <Home /></>,
-          },
-          {
-            path: "/about",
-            element: <><Header /><About /></>,
-          },
-          {
-            path: "/accommodation/:id",
-            element: <><Header /><Accommodation /></>,
-            errorElement:<><Header /> <Error/></>,
-          },
-          {
-            path: "*",
-            element:<><Header /><Error /></>,
-          }
-    
-]);
+    {   
+      element:<Header/>,
+      children:
+          [
+                  {
+                    path: "/",
+                    element:  <Home />,
+                  },
+                  {
+                    path: "/about",
+                    element: <About />,
+                  },
+                  {
+                    path: "/accommodation/:id",
+                    element:  <Accommodation />,
+                    errorElement: <Error/>,
+                  },
+                  {
+                    path: "*",
+                    element:<Error />,
+                  }
+          ]
+    }
+  ]);
 //Demarrer le router
 function App() {
   return (
