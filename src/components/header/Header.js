@@ -2,7 +2,6 @@ import './header.scss';
 import logo from '../../assets/logo-header.png';
 import Navbar from '../navbar/Navbar';
 import { Outlet } from 'react-router-dom';
-// import { Outlet } from 'react-router-dom';
 //Créer le composant Header
 function Header() {
     return(

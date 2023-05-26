@@ -4,11 +4,11 @@ import { useState,useEffect } from 'react';
 //Créer le composant Navbar
 function Navbar() {
         const home = '/';
-        const about = '/about';
+        const about ='/about';
         const [activeLink, setActiveLink]= useState('activeLink');
         //Recuperer le path pour changer le style des liens dans une Nav
         useEffect(()=>{
-            const path = window.location.pathname;
+            let path = window.location.pathname;
             setActiveLink(path);
         }, []);
         //Changer le lien après le clique

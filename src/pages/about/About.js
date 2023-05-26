@@ -4,9 +4,10 @@ import Collapse from '../../components/collapse/Collapse';
 import dataAbout from '../../data/dataAbout';
 // Créer le composant About avec tous les composants nécessaires
 function About() {
+    const path = window.location.pathname;
     return(
         <div className="home">
-            <Banner />
+            <Banner path = {path} />
             <main className="about_main">
                 {dataAbout.map( data => {
                     return(

@@ -5,33 +5,18 @@ import Footer from './components/footer/Footer';
 import About from './pages/about/About';
 import Error from "./pages/error/Error";
 import Accommodation from "./pages/accommodation/Accommodation";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-//Créer le router pour les page
-const router = createBrowserRouter( [
-    {   
-      element:<Header/>,
-      children:
-          [
-                  {
-                    path: "/",
-                    element:  <Home />,
-                  },
-                  {
-                    path: "/about",
-                    element: <About />,
-                  },
-                  {
-                    path: "/accommodation/:id",
-                    element:  <Accommodation />,
-                    errorElement: <Error/>,
-                  },
-                  {
-                    path: "*",
-                    element:<Error />,
-                  }
-          ]
-    }
-  ]);
+import {createBrowserRouter, createRoutesFromElements, RouterProvider, Route} from "react-router-dom";
+//Créer le router pour les pages
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route element={<Header/>}>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/accommodation/:id" element={<Accommodation/>} errorElement={<Error/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Route>
+    )
+  );
 //Demarrer le router
 function App() {
   return (
